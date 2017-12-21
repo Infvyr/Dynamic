@@ -1,0 +1,15 @@
+<?php
+
+function db_connect()
+{
+ $link = mysqli_connect('localhost','root','','mainbibl')
+ or die('Error connecting to MySQL server.');
+mysqli_set_charset($link,"UTF8");
+
+if(!mysqli_set_charset($link, "utf8"))
+    {
+        print("Error:" . mysqli_error($link));
+    }
+    return $link;
+}
+?>	

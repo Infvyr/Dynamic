@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+* { margin:0; padding:0; outline:none; }
+html {
+        overflow-y: scroll;
+        overflow-x: auto;
+    }
+::-webkit-scrollbar {width: 10px;}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: #008000; 
+    -webkit-box-shadow: inset 0 0 6px #008000; 
+}
+::-webkit-scrollbar-thumb:window-inactive { background: #008000; }
+
+body {
+        background-image: url(../img/background.png);
+        box-sizing: border-box;
+    }
+
+    table {
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    .row #tabel {
+        /* margin: 0px auto 50px; 
+        width: 960px;  */
+        border: 3px double green;
+    }
+
+    .div-table-content {
+        height:550px;
+        overflow-y:auto;
+        border: 1px solid #E32F02;
+        background-color: #ccc;
+        margin-top: -15px;
+        margin-bottom: 5px;
+    }
+
+    table thead th {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'titilliumregular', sans-serif;
+        background-color: #666;
+        color: #ff2;
+
+    }
+    table tr td {
+        text-align: center;
+        font: 1.1em 'titilliumregular', Verdana, sans-serif;
+        color: #db3309;
+    }
+
+/* stiluri de la dataTables*/
+#tabel_length { /* afisare pagini din  */
+    float: left;
+    width: 180px;
+    color: #000;
+    font-size: 1.1em;
+}
+div.dataTables_filter { /* cautarea */
+    float: right;
+    width: 400px;
+    color: #000;
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+div.dataTables_filter input {
+    width: 336px;
+    height: 30px;
+    line-height: 15px;
+    border: none;
+    border-radius: 5px;
+    text-indent: 4px;
+    color: #000;
+    font-weight: 600;
+}
+div.dataTables_filter input:focus { -webkit-box-shadow: 1px 0 2px 1px #7D8079;
+    box-shadow: 1px 0 2px 1px #7D8079; }
+
+div.dataTables_info { /* afisare pagini din */
+    width: 238px;
+    font-family: 'titilliumregular', sans-serif;
+    font-size: 1.2em;
+    color: #000;
+    border: 1px solid silver;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0 3px 1px #7D8079;
+    box-shadow: 1px 0 3px 1px #7D8079;
+    text-align: -webkit-center;
+    text-align: center;
+}
+
+div#tabel_paginate { /* paginarea */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'titilliumregular', sans;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+div#tabel_paginate a {
+    margin-left: 10px;
+    padding: 3px;
+    border: 1px solid #0567F0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #337AB7;
+    color: #fff;
+}
+div#tabel_paginate a:hover{ color: #db3309; }
+
+div#tabel_paginate .current {
+     -webkit-box-shadow: 2px 2px 4px -1px rgba(0,0,0, .55);
+     -moz-box-shadow: 2px 2px 4px -1px rgba(0,0,0, .55);
+     box-shadow: 2px 2px 4px -1px rgba(0,0,0, .55);
+     color: #db3309;
+     background-color: #fafaff;
+}
+div#tabel_paginate a.disabled {cursor: not-allowed;}
+
+/* Styles for toTop button */
+div.top {
+    width: 30px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #666;
+}
+
+ .top span, .top span:hover {
+    margin-left: 2px;
+    font-size: 1.8em; 
+    width: 100px;
+    position: absolute;
+    top: 44%;
+    color: #fefefe;
+} 
+
+.scrollToTop:hover {
+    text-decoration:none;
+    background-color: #454343;
+}
+
+/* Media Screens */
+@media screen and (min-width: 360px) and (max-width: 810px) {
+    div.top {display: none;}
+    div.dataTables_filter input { width: 220px; } 
+}
+
+@media screen and (max-width: 359px) {
+    table thead tr th, table tbody tr { font-size: 0.8em; }
+    div.top {display: none;}
+    div.dataTables_filter input { width: 160px; } 
+}
+
+@media screen and (min-width: 360px) and (max-width: 618px) {
+    table thead tr th, table tbody tr { font-size: 0.8em; }
+    div.top {display: none;}
+}
+
+@media screen and (min-width: 360px) and (max-width: 539px) {
+    div.dataTables_filter {
+        width: 360px;
+        float: left;
+    }
+    div.dataTables_filter input { width: 200px; }
+}
+@media screen and (min-width: 540px) and (max-width: 810px) {
+    div.dataTables_filter {
+        width: 265px;
+        float: right;
+    }
+    div.dataTables_filter input { width: 200px; }
+}
+@media screen and (min-width: 990px) and (max-width: 1045px) {
+    div.top {display: block; }
+    div.container {width: 92%;}
+}
+@media screen and (min-width: 1192px) and (max-width: 1235px) {
+    div.top {display: block; }
+    div.container {width: 90%;}
+}

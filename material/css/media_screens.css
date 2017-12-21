@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 600px) {
+	.m2meteo2_informer, .m2meteo_title { max-width: 160px; }
+	#title_article { font-size: 1.1em; font-weight: 700;}
+}
+
+
+@media screen and (max-width: 992px) {
+	.m2meteo2_informer, .m2meteo_title { max-width: 150px; }
+}
+
+@media screen and (min-width: 993px) {
+	.m2meteo2_informer, .m2meteo_title {
+		width: 300px;
+		max-width: 600px;
+	}
+@media screen and (min-width: 993px) and (max-width: 1345px) {
+    .col > #motto {
+        /* max-width: 470px;
+        margin: 20px 80px;*/
+    }
+}
+}

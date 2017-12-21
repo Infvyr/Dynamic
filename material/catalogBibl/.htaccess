@@ -1,0 +1,5 @@
+#AuthType Basic
+#AuthName "Admin Panel"
+#AuthUserFile /opt/lampp/htdocs/material/catalogBibl/.htpasswd
+#Require valid-user
+

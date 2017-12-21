@@ -1,0 +1,11 @@
+<?php
+/* Connect our database */
+
+$host = 'localhost';
+$user = 'root';
+$passwd = '';
+$dbName = 'users';
+
+$db = new mysqli($host, $user, $passwd, $dbName);
+#$db->query("SET NAMES 'utf-8'"); // nu lucreaza in cazul dat
+mysqli_set_charset($db,"UTF8"); # pentru diacritice

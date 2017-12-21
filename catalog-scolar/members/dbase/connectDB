@@ -1,0 +1,10 @@
+<?
+$db = mysqli_connect("localhost", "root", "", "catalog");
+mysqli_set_charset($db,"UTF8"); # pentru diacritice
+
+/* check connection */
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+}
+?>

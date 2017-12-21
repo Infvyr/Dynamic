@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+* {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    outline: none;
+}
+body {
+    background-color: #eee;
+    min-height: 100%;
+    position: relative;
+}
+body:after {
+    content: '';
+    display: block;
+    height: 100px;
+}
+h3 {
+    font-family: 'Open Sans';
+}
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    color: #0DFF0D;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #E1E1E1;
+    text-shadow: 0 0 1px #BEC2FF;
+}
+.navbar-inverse .navbar-nav > li:hover {
+    background-color: #1E1E1E;
+    transition: all 800ms;
+}
+.navbar-inverse .navbar-header > .navbar-brand {
+    color: #fff;
+    text-shadow: 0 1px 1px #9EA5FF;
+}
+.navbar-inverse .navbar-header > .navbar-brand:hover {
+    color: #E1E1E1;
+}
+.navbar .navbar-collapse {
+    border-color: #fefefe;
+}
+.nav li a {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+}
+
+/*============================================*/
+
+.jumbotron > center > h3 {
+    color: #010101;
+    font-family: "ArimoRegular";
+    font-size: 2em;
+}
+.panel-heading > center > h3 {
+    font-size: 1.7em;
+    line-height: 55px;
+    vertical-align: middle;
+}
+.mobile-menu .nav-pills {
+    outline: none;
+    border: none;
+}
+.nav-pills li > a {
+    cursor: pointer;
+    color: white;
+    font-family: 'ArimoRegular', Helvetica, sans;
+}
+.nav-pills li > a:hover {
+    cursor: pointer;
+    color: #141414;
+}
+.nav-pills li:hover {
+    cursor: pointer;
+}
+.nav-pills > li.active > a {
+    outline: none;
+    text-decoration: none;
+}
+.nav > li {
+    line-height: 30px;
+}
+p {
+    font-family: 'Open Sans';
+    color: #000;
+}
+span.logo-edit {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+.text {
+    font-family: 'Open Sans';
+    font-size: 1.3em;
+    font-weight: bold;
+    colore: #000;
+}
+.glyphicon {
+    font-weight: bold;
+}
+.list-group > li {
+    cursor: pointer;
+    color: #000;
+    font-family: 'Open Sans', Arial;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.list-group {
+    border: none;
+    outline: none;
+    margin-bottom: -1px;
+}
+.list-group > li > a {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.list-group > li:hover {
+    transition: all .45s;
+    background-color: #D9D9D9;
+    color: #fefefe;
+}
+.list-group > .active {
+    background-color: #274A6A;
+}
+.list-group > .active a {
+    color: #0DFF0D;
+}
+.section-info {
+    padding: 15px;
+}
+.nav-tabs > li {
+    float: none;
+    margin-bottom: 1px;
+    border: none;
+    outline: none;
+}
+.nav-tabs {
+    border: none;
+    outline: none;
+}
+.nav-tabs>li.active>a {
+    color: #555;
+    background-color: #fff;
+    border: 1px inset #ddd;
+    cursor: pointer;
+}
+.btn-auth {
+    text-transform: uppercase;
+    font-family: 'ArimoRegular', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================================ */
+
+#background_image {
+    background-image: url("../media/school-pattern.jpg");
+    background-color: lightblue;
+}
+#contact_form {
+    margin: 27px auto;
+    max-width: 500px;
+    background-color: #F3F3F3;
+    padding: 20px 30px;
+    border: 1px solid #F8FFF8;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #c4c4c4;
+}
+#res_form {
+    margin: 27px auto;
+    max-width: 500px;
+    background-color: #F3F3F3;
+    padding: 20px 30px;
+    border: 1px solid #F8FFF8;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #c4c4c4;
+}
+button#send {
+    max-width: 200px;
+    margin-left: -15px;
+    font-family: 'Open Sans', Arial, Helvetica;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+textarea[name=message] {
+    resize: none;
+}
+.form-group button {
+    margin-bottom: -14px;
+    width: 100%;
+    font-family: 'Open Sans', Arial, Helvetica;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.form-group label {
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* ======================================================== */
+
+#error {
+    padding-top: 5px;
+}
+.error {
+    animation: shake 1s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    color: #FF0539;
+    font-size: 1.2em;
+}
+.pnl_1 {
+    margin: 27px auto;
+}
+.pnl_2 {
+    margin: 17px 0px;
+}
+.pnl_3 {
+    margin-bottom: 25px;
+}
+
+/* footer styles */
+
+.footer-basic-centered {
+    background-color: #222;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    font: normal 18px sans-serif;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.footer-basic-centered .footer-company-name {
+    color: #fafafa;
+    font-size: 14px;
+    margin: 0;
+}
+.footer-basic-centered .footer-links {
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 0px 20px;
+    margin: 5px;
+}
+.footer-basic-centered .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.footer-basic-centered .footer-links a:hover {
+    border: 1px solid #337ab7;
+    transition: all 0.3s ease-in;
+    background-color: #0a0808;
+}
+
+.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.fade-scale.in {
+  opacity: 1;
+  transform: scale(1);
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+    .footer-basic-centered {
+        padding: 35px;
+    }
+    .footer-basic-centered .footer-company-name {
+        font-size: 12px;
+    }
+    .footer-basic-centered .footer-links {
+        font-size: 14px;
+        padding: 10px 0 15px;
+    }
+    .footer-basic-centered .footer-links a {
+        line-height: 1.8;
+        padding: 5px;
+    }
+}
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+}
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

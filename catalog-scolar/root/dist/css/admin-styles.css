@@ -1,0 +1,49 @@
+/* administration main page styles */
+section .content-title { margin-bottom:15px; }
+.info-box2 {
+    display: block;
+    min-height: 60px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.info-box-content2 {
+    padding: 5px 10px;
+    margin-left: 60px;
+}
+
+.info-box-icon2 {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+  display: block;
+  float: left;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  font-size: 45px;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.info-box-text { 
+  font-size: 18px !important;
+  text-transform: capitalize !important;
+}
+
+.bg_light_green { /* p/u adaugare */
+  background-color: #00A67F !important;
+}
+.bg_light_blue { /* p/u modificare */
+  background-color: #52A1CF !important; 
+}
+.bg_light_red { /* p/u stergere */
+  background-color: #ff462a !important;
+}
+.bg_light_aqua {
+  background-color: #97D4F3 !important;
+}

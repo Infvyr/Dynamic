@@ -1,0 +1,7 @@
+#Prevenire listare directorii, vizualizare imagini, arhive etc.
+Options -Indexes
+IndexIgnore *
+IndexIgnore *.zip
+IndexIgnore *.zip *.jpg *.gif
+#==============================================================
+

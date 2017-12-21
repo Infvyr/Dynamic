@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* font-family: "ArimoRegular"; titles*/
+@font-face {
+    font-family: "ArimoRegular";
+    src: url("../fonts/ArimoRegular/ArimoRegular.eot");
+    src: url("../fonts/ArimoRegular/ArimoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArimoRegular/ArimoRegular.woff") format("woff"),
+    url("../fonts/ArimoRegular/ArimoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
